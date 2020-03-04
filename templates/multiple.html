@@ -1,0 +1,31 @@
+{% extends "layout.html" %}
+<style>
+
+</style>
+{% block body %}
+<div class="container" style="text-align: center;">
+	<h4 style="text-align: center;">For Dual Encryption: Select the order of Encryption you desire.</h4>
+	<form style="display: inline-block;" action="/dual" method="POST" style="text-align: center;" enctype="multipart/form-data">
+		<div>
+		<label style="color: aliceblue;" for="first">First Encryption:</label>
+		<select name="first" required="true">
+			<option value="0">Select</option>
+			<option value="rsa_encryption">RSA Encryption</option>
+			<option value="des_encryption">DES Encryption</option>
+			<option value="tdes_encryption">Triple DES Encryption</option>
+			<option value="blowfish_encryption">Blowfish Encryption</option>
+		</select>
+		</div>	
+		<br>
+		<label style="color: aliceblue;" for="second">Second Encryption:</label>
+		<select name="second" required="true">
+			<option value="0">Select</option>
+			<option value="rsa_encryption">RSA Encryption</option>
+			<option value="des_encryption">DES Encryption</option>
+			<option value="tdes_encryption">Triple DES Encryption</option>
+			<option value="blowfish_encryption">Blowfish Encryption</option>
+		</select> <br><br>
+		<input type="submit" name="dual_submit" value="Confirm Selection!">
+	</form>
+</div>
+{%endblock%}

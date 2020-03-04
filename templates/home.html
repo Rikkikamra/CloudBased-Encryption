@@ -1,0 +1,9 @@
+{% extends "layout.html" %}
+
+{% block body %}
+
+<form action="/buttonclick" method="POST" style="text-align: center;">
+	<input type="submit" id="single" name="type" value="Single Encryption">
+	<input type="submit" id="multiple" name="type" value="Multiple Encryption">
+</form>
+{%endblock%}

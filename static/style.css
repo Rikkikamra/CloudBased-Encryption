@@ -1,0 +1,114 @@
+	body
+	{
+background: #000428;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #004e92, #000428);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #004e92, #000428); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+	}
+	.a{
+		color: greenyellow !important;
+		font-size: 29px !important;
+	}
+	.imgInput{
+		/*position: center;*/
+		/*align-items: center;*/
+		text-align: center;
+		margin-bottom: 5px;
+	}
+	.homeBtn{
+		position: bottom;
+		float: right;
+		margin-bottom: 10px;
+		margin-right: 5px;
+	}
+	h4,h6,a{
+		text-align: center;
+	}
+	h1,h2{
+	color:white;
+	text-align:center;
+	font-family : "Times New Roman", Times, serif;
+	}
+	* {
+	box-sizing: border-box;
+	}
+	h4{
+	color:white;
+	font-size: 24px;
+	font-family : "Times New Roman", Times, serif;
+	}
+	p{
+	color:white;
+	text-align:center;
+	font-family : "Times New Roman", Times, serif;
+	font-size: 24px;
+	}
+
+	input[type=text], select, textarea {
+	  width: 100%;
+	  padding: 12px;
+	  border: 1px solid #ccc;
+	  border-radius: 4px;
+	  resize: vertical;
+	}
+
+	label {
+	  padding: 12px 12px 12px 0;
+	  display: inline-block;
+	}
+
+	input[type=submit] {
+	  
+	  padding: 12px 20px;
+	  border: none;
+	  border-radius: 4px;
+	  cursor: pointer;
+	 
+	}
+	
+	input[type=file] {
+	  
+	padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 22px;
+    background-color: lightseagreen;
+	 
+	}
+
+	input[type=submit]:hover {
+	  background-color: #45a049;
+	}
+
+
+	div{
+	margin: 0 auto;
+    overflow: hidden;
+  
+	}
+	.col-25 {
+	  float: left;
+	  width: 25%;
+	  margin-top: 6px;
+	}
+
+	.col-75 {
+	  float: left;
+	  width: 75%;
+	  margin-top: 6px;
+	}
+
+	/* Clear floats after the columns */
+	.row:after {
+	  content: "";
+	  display: table;
+	  clear: both;
+	}
+	.heading{
+	color:cyan !important;
+	text-align: center;
+	}
+
+	
+

@@ -1,0 +1,31 @@
+<style>
+.blinking{
+    animation:blinkingText 0.8s infinite;
+}
+@keyframes blinkingText{
+    0%{     color: chartreuse;    }
+	10%{     color: darkgreen;    }
+	20%{     color: forestgreen;    }
+	49%{    color: transparent; }
+    50%{    color: transparent; }
+    99%{    color:transparent;  }
+    100%{   color:sandybrown    }
+}
+</style>
+{% extends "layout.html" %}
+
+{% block body %}
+<h1 class="blinking">  Congratulations your files is successfully Encrypted</h4>
+<h2 >Click on the following link to download the encrypted file and key</h6>
+	<div style="text-align: center">
+		<a style="color:yellowgreen; font-size: 24px;" href="{{url_for('return_files',file_enc=file,val=1 )}}" download>Encrypted File</a><br>
+		<a style="color:tomato; font-size: 24px;" href="{{url_for('return_key',key_enc=key,val=1)}}" download>Key used in Encryption</a>
+	</div>
+
+<div class="homeBtn">
+	<form action="\homeEnc">
+		<input name="home" type="submit" value="HOME">
+	</form>
+</div>
+
+{%endblock%}

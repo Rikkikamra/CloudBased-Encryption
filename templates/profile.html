@@ -1,0 +1,12 @@
+{% extends "layout.html" %}
+
+{% block body %}
+
+<h4 style="text-align: center;">Select the type of encryption you want to do.</h4>
+<form action="/upload" method="POST" style="text-align: center;">
+	<input type="submit" value="RSA Encryption" name="encryptBtn">
+	<input type="submit" value="Triple DES Encryption" name="encryptBtn">
+	<input type="submit" value="DES Encryption" name="encryptBtn">
+	<input type="submit" value="Blowfish Encryption" name="encryptBtn">
+</form>
+{%endblock%}
